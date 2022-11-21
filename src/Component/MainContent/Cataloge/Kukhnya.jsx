@@ -8,7 +8,10 @@ function Kukhni() {
     <div>
       <CatalogLinkBtn/>
       <div className={styles.descriptionBlock}>
-      <p className={styles.description}>Опис Кухні</p>
+      <p className={styles.description}>ДЛЯ ВИГОТОВЛЕННЯ КУХОНІ ПІД ЗАМОВЛЕННЯ ПРОПОНУЄМ НАШИМ КЛІЄНТАМ ВЕЛИКИЙ ВИБІР ФАСАДІВ, СТІЛЬНИЦЬ, ПЛИТНИХ МАТЕРІАЛІВ ТА ФУРНІТУРИ. РОЗРОБИМО
+ІНДИВІДУАЛЬНИЙ ПРОЕКТ, ЯКИЙ БУДЕ ВІДПОВІДАТИ ВСІМ ВАШИМ ВИМОГАМ. ЗАВДЯКИ
+ПРОФЕСІЙНОМУ МОНТАЖУ МЕБЛІ БУДУТЬ ГОТОВІ ДО ТРИВАЛОЇ ЕКСПЛУАТАЦІЇ.
+</p>
       </div>
       <Carousel variant="dark" fade>
         {KukhniaServiceData.map((element, index) => (

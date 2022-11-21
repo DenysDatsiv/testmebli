@@ -1,5 +1,11 @@
 .carousel .carousel-item {
     max-height:450px;
+
+    max-width: 99%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 
 .carousel-item img {
