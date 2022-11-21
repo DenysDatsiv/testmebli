@@ -1,0 +1,25 @@
+.mainBlock {
+    margin: 15px 25px;
+  }
+.header {
+  color: #108006;
+  text-align: center;
+}
+.benefits {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.benefits ul li::before {
+  content: "\2022";
+  color: #108006;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+.benefits ul li {
+  padding-right: 23px;
+  text-align: left;
+  list-style-type: none;
+}

@@ -1,0 +1,10 @@
+.description
+{
+    margin-left: 14px;
+display: flex;
+margin-top: 8px;
+align-items: center;}
+.descriptionBlock
+{margin-bottom: 10px;
+   background-color: rgb(236, 236, 236);
+}

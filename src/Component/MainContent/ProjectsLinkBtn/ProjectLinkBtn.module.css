@@ -1,0 +1,50 @@
+.linkButton {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: #fff;
+  height: 40px;
+  width: 120px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #108006;
+  flex-direction: row;
+  border-radius: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.GeneralBlock
+{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+.linkButton:hover
+{
+    color:#fff;
+}
+.linkBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+}
+
+@media(min-width:500px)
+{
+  .linkBlock {
+margin: 0 25px;
+  }
+}
+@media(min-width:1115px)
+{
+    .linkBlock { display: flex;
+       flex-direction: row;
+       margin: 5px 25px 8px 25px;
+      }
+}

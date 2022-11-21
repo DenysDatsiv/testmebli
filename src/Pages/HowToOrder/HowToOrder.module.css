@@ -1,0 +1,56 @@
+.header
+{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.mainBlock
+{
+    border:1px solid rgb(36, 162, 78);
+    margin:8px 8px;
+}
+.img
+{
+    width:3.8vh;
+    height: 3.8vh;
+
+}
+.steps
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6px;
+}
+.text
+{
+    font-size: 16px;
+    margin-left: 10px;
+   align-items: center;
+}
+@media(min-width:992px)
+{
+    .Block
+    {
+ margin: 0 11rem;
+  justify-content: center;
+    } 
+
+.img
+{
+    width:4vh;
+    height: 4vh;
+
+}
+.text
+{
+    font-size: 19px;
+    margin-left: 40px;
+   align-items: center;
+}
+.steps
+{
+    display: flex;
+    justify-content: flex-start;
+
+}
+}

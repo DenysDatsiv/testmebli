@@ -1,0 +1,171 @@
+.responsiveBlock
+{
+    display: flex;
+    justify-content: space-between;
+}
+.phoneNumber
+{
+    font-size: 20px;
+}
+.dropeditem
+{
+    font-size: 15px;
+    color:#139415;
+    font-weight: 600;
+}
+.TextNavigation
+{
+    font-size: 20px;
+    color:#139415;
+    font-weight: 600;
+}
+.dropdown-toggle::after {
+    display: none !important; 
+  }
+.TextNavigationCatalog
+{
+    font-size: 21px;
+    color:#139415;
+    font-weight: 600;
+}
+
+.navbar-nav .open .dropdown-menu {
+    background-color:#fff;
+  }
+  .toggle
+  {
+    border: none;
+  }
+@media (min-width:992px)
+{
+    .NavigationMenu
+    {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap
+    }
+}
+@media(max-width:750px)
+{
+    .LogoText
+    {
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    .logo
+    {
+        max-width: 40px;
+        max-height: 40px;
+    }
+    .logoBlock
+    {
+        display: flex;
+        flex-direction: row;
+        left: 0;
+    }
+    .toggle
+    {
+        padding-left: 20px;
+    }
+    .mainBlock
+    {
+       display: flex;
+       justify-content: space-between;
+       max-width:100%
+    }
+    
+}
+@media(max-width:600px)
+{
+    .logo{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+@media(min-width:600px)and (max-width:991px)
+{
+    .responsiveBlock
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .LogoText
+    {
+        font-size: 17px;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    .logo
+    {
+        max-width: 120px;
+        max-height: 70px;
+    }
+    .logoBlock
+    {
+        display: flex;
+        flex-direction: row;
+        left: 0;
+    }
+}
+
+
+@media(min-width:990px)
+{
+    .LogoText
+    {
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 10px;
+
+    }
+
+    .logo
+    {
+        max-width: 200px;
+        max-height: 200px;
+    }   
+
+    .logoBlock
+    {
+        padding-right: 10px;
+    }
+    .mainBlock
+    {
+       display: flex;
+       justify-content: space-between;
+       max-width:96%
+    }
+}
+
+.TextNavigation:focus
+{
+    
+    font-weight: 600;
+}
+
+@media(min-width:992px)
+{
+    .NavigationMenu_top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NavigationMenu
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.mainBlock
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:5px 15rem; 
+}
+}

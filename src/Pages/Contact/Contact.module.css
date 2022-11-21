@@ -1,0 +1,113 @@
+
+.mainHeader
+{
+    font-size: 28px;
+    color: #333;
+    line-height: 1.2;
+    font-family: "Poppins,sans-serif";
+    font-weight: 600;
+    font-style: normal;
+}
+.contactInfoblockMin
+{
+   
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.subHeader
+{
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: 0;
+    color: #333;
+    text-transform: none
+}
+.subtext
+{
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Poppins,sans-serif";
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    letter-spacing: .05em;
+    color: #707070;
+    text-transform: none;
+}
+.googleMap
+{
+    width:100%;
+    max-width: 500px;
+    height:350px;
+}
+
+@media (max-width:570px)
+{
+    .contactInfoblock
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin: 10px auto;
+        align-items: center;
+        margin:10px 20px ;
+    }
+    .mainHeader
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:570px) and (max-width: 899px)
+{
+    .contactInfoblock
+    {
+       display: flex;
+       flex-direction: column;
+    }
+    .contactInfoblockMin
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .mainHeader
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:922px)
+{
+    .contactInfoblock
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+       
+    }
+    .mainHeader
+    {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .contactInfoblockMin
+    {
+display: flex;
+margin-left:22%;
+    }
+    .subHeader
+    {
+        display: flex;
+       left: 0;
+        align-items: center;
+       justify-content: flex-start;   }
+}
