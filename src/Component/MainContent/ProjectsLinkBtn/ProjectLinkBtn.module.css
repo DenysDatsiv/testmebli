@@ -16,11 +16,9 @@ margin-bottom: 10px;
 }
 .GeneralBlock
 {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  align-items: center;
-  justify-items: center;
+ display: flex;
+ justify-content: center;
+ margin-left: 26px;
 }
 .linkButton:hover
 {
