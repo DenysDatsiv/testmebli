@@ -11,12 +11,19 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavigationMenu() {
-  const [show, setShow] = useState(false);
+  const [showcatalog, setShowcatalog] = useState(false);
+  const [showmebli, setShowmebli] = useState(false);
   const showDropdown = (e) => {
-    setShow(!show);
+    setShowcatalog(!showcatalog);
   };
   const hideDropdown = (e) => {
-    setShow(false);
+    setShowcatalog(false);
+  };
+  const showDropdownMebli = (e) => {
+    setShowmebli(!showmebli);
+  };
+  const hideDropdownMebli = (e) => {
+    setShowmebli(false);
   };
   return (
     <Navbar bg="light" expand="lg">
@@ -135,14 +142,48 @@ function NavigationMenu() {
             </div>
           </Container>
           <Nav className="me-auto">
+          <NavDropdown
+              className={styles.TextNavigation}
+              showmebli={showmebli}
+              onMouseEnter={showDropdownMebli}
+              title={
+                <span href="/cagtalo" className={styles.TextNavigation}>
+                МЕБЛІ "ПІД КЛЮЧ"
+                </span>
+              }
+              onMouseLeave={hideDropdownMebli}
+            >
+             
+              <NavDropdown.Item href="/project/first">
+              ПРОЕКТ 1
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/project/second">
+              ПРОЕКТ 2
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/project/third">
+             ПРОЕКТ 3
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/project/four">
+              ПРОЕКТ 4
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/project/five"
+              > 
+                ПРОЕКТ 5
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                href="/project/six"
+              > 
+                ПРОЕКТ 6
+              </NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link className={styles.TextNavigation} href="/furniture-key">
-              {" "}
-              МЕБЛІ "ПІД КЛЮЧ"
+              
             </Nav.Link>
 
             <NavDropdown
               className={styles.TextNavigation}
-              show={show}
+              showcatalog={showcatalog}
               onMouseEnter={showDropdown}
               title={
                 <span href="/cagtalo" className={styles.TextNavigation}>
@@ -166,7 +207,6 @@ function NavigationMenu() {
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
-                className={styles.dropeditem}
                 href="/catalog/rizne"
               >
                 Різне

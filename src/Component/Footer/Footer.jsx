@@ -10,26 +10,7 @@ function Footer() {
       <div className={styles.footerSubMain}>
         <img className={styles.logo} src={logo} alt="" />
         <div className={styles.allcategories}>
-          <div className={styles.categories}>
-            <h5>КАТЕГОРІЇ</h5>
-            <ul>
-              <li>
-                <a className={styles.categoriesItem} href="/furniture-key">
-                  МЕБЛІ ПІД КЛЮЧ
-                </a>
-              </li>
-              <li>
-                <a className={styles.categoriesItem} href="/how-to-order">
-                  ЯК ЗАМОВИТИ
-                </a>
-              </li>
-              <li>
-                <a className={styles.categoriesItem} href="/">
-                 Каталог
-                </a>
-              </li>
-            </ul>
-          </div>
+      
           <div className={styles.footer_categories}>
             <h5>КОНТАКТИ</h5>
             <div>
@@ -37,7 +18,7 @@ function Footer() {
                 <li>
                   <img src={mail} className={styles.icon} alt="mail"></img>
 
-                  <a className={styles.categoriesItem} href="mailto: LVIV-MEBLI@UKR.NET">LVIV-MEBLI@UKR.NET</a>
+                  <a className={styles.categoriesItem} href="mailto: LVIV-MEBLI@UKR.NET">lviv-mebli@ukr.net</a>
                 </li>
                 <li>
                   <img src={call} className={styles.icon} alt="call"></img>

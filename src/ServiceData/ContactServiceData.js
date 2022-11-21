@@ -12,7 +12,7 @@ export const ContactServiceData = [
     {
         header: "Контакти",
         infoFirst:"+380-67-273-92-83",
-        infoSecond:"LVIV-MEBLI@UKR.NET"
+        infoSecond:"lviv-mebli@ukr.net"
     }
   ];
   
