@@ -7,14 +7,6 @@ function MebliUvannu() {
   return (
     <div>
       <CatalogLinkBtn />
-      <div className={styles.descriptionBlock}>
-        <p className={styles.description}>
-          ПРОПОНУЄМ ВИГОТОВЛЕННЯ МЕБЛІВ У ВАННУ КІМНАТИ. РОЗРОБИМО ПРОЕКТ З
-          ВРАХУВАННЯМ ВАШИХ ПОБАЖАНЬ ТА ДОПОМОЖЕМ ПІДІБРАТИ МАТЕРІАЛИ І
-          ФУРНІТУРУ. В НАС ВИ ОТРИМАЄТЕ ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ.
-          ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ ТА ПРОФЕСІЙНИЙ МОНТАЖ.
-        </p>
-      </div>
       <Carousel variant="dark" fade>
         {MebliUvannuServiceData.map((element, index) => (
           <Carousel.Item key={index}>
@@ -26,6 +18,14 @@ function MebliUvannu() {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div className={styles.descriptionBlock}>
+        <p className={styles.description}>
+          ПРОПОНУЄМО ВИГОТОВЛЕННЯ МЕБЛІВ У ВАННУ КІМНАТУ. РОЗРОБИМО ПРОЕКТ З
+          ВРАХУВАННЯМ ВАШИХ ПОБАЖАНЬ ТА ДОПОМОЖЕМО ПІДІБРАТИ МАТЕРІАЛИ ТА
+          ФУРНІТУРУ. В НАС ВИ ОТРИМАЄТЕ ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ,
+          ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ ТА ПРОФЕСІЙНИЙ МОНТАЖ.
+        </p>
+      </div>
     </div>
   );
 }

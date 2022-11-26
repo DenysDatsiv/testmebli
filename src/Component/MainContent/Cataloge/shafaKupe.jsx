@@ -2,18 +2,12 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ShafaKupeServiceData } from "../../../ServiceData/CatalogServiceData";
 import CatalogLinkBtn from "../CatalogLinkBtn/CataloLinksBtn,";
-import styles from "../Project/ProjectPage.module.css"
+import styles from "../Project/ProjectPage.module.css";
 
 function ShafaKupe() {
   return (
     <div>
-    <CatalogLinkBtn/>
-    <div className={styles.descriptionBlock}>
-    <p className={styles.description}>ДЛЯ ВИГОТОВЛЕННЯ ШАФ-КУПЕ ВИКОРИСТОВУЄМ АЛЮМІНІЄВУ РОЗСУВНУ СИСТЕМУ.
-ДЛЯ НАПОВНЕННЯ ФАСАДУ ПРОПОНУЄМ ДЗЕРКАЛО , СКЛО ЛАКОБЕЛЬ, ПІСКОМАТУВАННЯ,
-ФОТОДРУК ТА ПЛИТНІ МАТЕРІАЛИ. ТАКОЖ Є МОЖЛИВІСТЬ ЗМОНТУВАТИ ПЛАВНИЙ 
-ДОТЯГ ДВЕРЕЙ. НА КОРПУС  ВИКОРИСТОВУЄМ ПЛИТИ EGGER ТА SWISSKRONO.
-</p></div>
+      <CatalogLinkBtn />
       <Carousel variant="dark" fade>
         {ShafaKupeServiceData.map((element, index) => (
           <Carousel.Item key={index}>
@@ -25,6 +19,15 @@ function ShafaKupe() {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div className={styles.descriptionBlock}>
+        <p className={styles.description}>
+          ДЛЯ ВИГОТОВЛЕННЯ ШАФ-КУПЕ ВИКОРИСТОВУЄМО АЛЮМІНІЄВУ РОЗСУВНУ СИСТЕМУ.
+          ДЛЯ НАПОВНЕННЯ ФАСАДУ ПРОПОНУЄМ ДЗЕРКАЛО, СКЛО ЛАКОБЕЛЬ,
+          ПІСКОМАТУВАННЯ, ФОТОДРУК ТА ПЛИТНІ МАТЕРІАЛИ. ТАКОЖ Є МОЖЛИВІСТЬ
+          ЗМОНТУВАТИ ПЛАВНИЙ ДОТЯГ ДВЕРЕЙ. НА КОРПУС ВИКОРИСТОВУЄМ ПЛИТИ EGGER
+          ТА SWISSKRONO.
+        </p>
+      </div>
     </div>
   );
 }

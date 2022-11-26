@@ -9,14 +9,7 @@ function ProjectPageFirst() {
   return (
     <div>
       <ProjectsLinkBtn />
-      <div className={styles.descriptionBlock}>
-      <p className={styles.description}>
-        В ДАНОМУ ПРОЕКТІ ДЛЯ ВИГОТОВЛЕННЯ КУХНІ НА ФАСАД ВИКОРИСТАНО ФАРБОВАНІ
-        ФАСАДИ ІЗ ФРЕЗОВАНОЮ РУЧКОЮ, ПЛИТНІ МАТЕРІАЛИІ EGGER, ФУРНІТУРА ВІД
-        ФІРМИ BLUM. ТАКОЖ ПЕРЕДБАЧЕНО LED-ПІДСВІТКУ. ДЛЯ ВИГОТОВЛЕННЯ ПРИХОЖОЇ І
-        СПАЛЬНІ І ГАРДЕРОБНОЇ ВИКОРИТАНО МАТЕРІАЛИ ВІД EGGER.
-      </p>
-      </div>
+
       <Carousel nextIcon="" nextLabel="" className={styles.Carousel} variant="dark" fade>
         {ProjectFirstImage.map((element, index) => (
           <Carousel.Item key={index}>
@@ -28,7 +21,16 @@ function ProjectPageFirst() {
             />
           </Carousel.Item>
         ))}
+        
       </Carousel>
+      <div className={styles.descriptionBlock}>
+      <p className={styles.description}>
+        В ДАНОМУ ПРОЕКТІ ДЛЯ ВИГОТОВЛЕННЯ КУХНІ НА ФАСАД ВИКОРИСТАНО ФАРБОВАНІ
+        ФАСАДИ ІЗ ФРЕЗОВАНОЮ РУЧКОЮ, ПЛИТНІ МАТЕРІАЛИ EGGER, ФУРНІТУРА ВІД
+        ФІРМИ BLUM. ТАКОЖ ПЕРЕДБАЧЕНО LED-ПІДСВІТКУ. ДЛЯ ВИГОТОВЛЕННЯ ПРИХОЖОЇ,
+        СПАЛЬНІ І ГАРДЕРОБНОЇ ВИКОРИТАНО МАТЕРІАЛИ ВІД EGGER.
+      </p>
+      </div>
     </div>
   );
 }

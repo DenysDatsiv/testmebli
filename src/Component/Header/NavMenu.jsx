@@ -142,43 +142,8 @@ function NavigationMenu() {
             </div>
           </Container>
           <Nav className="me-auto">
-          <NavDropdown
-              className={styles.TextNavigation}
-              showmebli={showmebli}
-              onMouseEnter={showDropdownMebli}
-              title={
-                <span href="/cagtalo" className={styles.TextNavigation}>
-                МЕБЛІ "ПІД КЛЮЧ"
-                </span>
-              }
-              onMouseLeave={hideDropdownMebli}
-            >
-             
-              <NavDropdown.Item href="/project/first">
-              ПРОЕКТ 1
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/project/second">
-              ПРОЕКТ 2
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/project/third">
-             ПРОЕКТ 3
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/project/four">
-              ПРОЕКТ 4
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/project/five"
-              > 
-                ПРОЕКТ 5
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="/project/six"
-              > 
-                ПРОЕКТ 6
-              </NavDropdown.Item>
-            </NavDropdown>
             <Nav.Link className={styles.TextNavigation} href="/furniture-key">
-              
+            МЕБЛІ "ПІД КЛЮЧ"
             </Nav.Link>
 
             <NavDropdown
@@ -205,7 +170,6 @@ function NavigationMenu() {
               <NavDropdown.Item href="/catalog/mebli_u_vannu">
                 МЕБЛІ У ВАННУ
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item
                 href="/catalog/rizne"
               >
@@ -217,10 +181,7 @@ function NavigationMenu() {
               {" "}
               ЯК ЗАМОВИТИ
             </Nav.Link>
-            <Nav.Link className={styles.TextNavigation} href="/contact">
-              {" "}
-              КОНТАКТИ
-            </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

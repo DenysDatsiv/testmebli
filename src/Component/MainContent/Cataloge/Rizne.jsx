@@ -8,14 +8,6 @@ function Rizne() {
   return (
     <div>
      <CatalogLinkBtn/>
-     <div className={styles.descriptionBlock}>
-     <p className={styles.description}>
-        У НАС МОЖНА ЗАМОВИТИ ВИГОТОВЛЕННЯ МЕБЛІВ У ДИТЯЧУ КІМНАТУ, МЕБЛІВ ДЛЯ
-        ОФІСУ ТА МАГАЗИНУ ТА ІНШИХ МЕБЛІВ ПІД ЗАМОВЛЕННЯ. В НАС ВИ ОТРИМАЄТЕ
-        ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ. ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ ТА
-        ПРОФЕСІЙНИЙ МОНТАЖ.
-      </p>
-      </div>
       <Carousel variant="dark" fade>
         {RizneServiceData.map((element, index) => (
           <Carousel.Item key={index}>
@@ -27,6 +19,14 @@ function Rizne() {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div className={styles.descriptionBlock}>
+     <p className={styles.description}>
+        У НАС МОЖНА ЗАМОВИТИ ВИГОТОВЛЕННЯ МЕБЛІВ У ДИТЯЧУ КІМНАТУ, МЕБЛІВ ДЛЯ
+        ОФІСУ, МАГАЗИНУ ТА ІНШІ МЕБЛІ ПІД ЗАМОВЛЕННЯ. В НАС ВИ ОТРИМАЄТЕ
+        ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ, ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ ТА
+        ПРОФЕСІЙНИЙ МОНТАЖ.
+      </p>
+      </div>
     </div>
   );
 }

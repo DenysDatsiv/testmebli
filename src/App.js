@@ -8,7 +8,6 @@ import HowToOrder from "./Pages/HowToOrder/HowToOrder";
 import Catalog from "./Pages/Catalog/Catalog";
 import Footer from "./Component/Footer/Footer";
 import GetConsultation from "./Component/MainContent/GetConsultation/GetConsultatin";
-import SecondTextBlock from "./Component/MainContent/PageText/SecondTextBlock/SecondTextBlock";
 import FirstTextBlock from "./Component/MainContent/PageText/FirstTextBlock/FirstTextBlock";
 import ProjectPageFirst from "./Component/MainContent/Project/ProjectPageFirst";
 import ProjectPageSecond from "./Component/MainContent/Project/ProjectPageSecond";
@@ -28,7 +27,7 @@ function App() {
     <>   <Router>
       <NavigationMenu />
    <div className={styles.Content}>
-    <FirstTextBlock/>
+
         <Switch>
           <Router path="/furniture-key"component={FurnitureKey} exact>
             <FurnitureKey />
@@ -84,7 +83,7 @@ function App() {
             <Rizne />
           </Router>
         </Switch>
-        <SecondTextBlock/>
+      
       <GetConsultation/>
     </div>
         <Footer/>

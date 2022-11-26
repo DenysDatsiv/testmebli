@@ -7,14 +7,7 @@ function Prykhozhi() {
   return (
     <div>
     <CatalogLinkBtn/>
-    <div className={styles.descriptionBlock}>
-    <p className={styles.description}>
-        ПРОПОНУЄМ ВИГОТОВЛЕННЯ МЕБЛІВ У ПРИХОЖУ. РОЗРОБИМО ПРОЕКТ З ВРАХУВАННЯМ
-        ВАШИХ ПОБАЖАНЬ ТА ДОПОМОЖЕМ ПІДІБРАТИ МАТЕРІАЛИ І ФУРНІТУРУ. В НАС ВИ
-        ОТРИМАЄТЕ ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ. ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ
-        ТА ПРОФЕСІЙНИЙ МОНТАЖ.
-      </p>
-      </div>
+
       <Carousel variant="dark" fade>
         {PrykhozhiServiceData.map((element, index) => (
           <Carousel.Item key={index}>
@@ -26,6 +19,14 @@ function Prykhozhi() {
           </Carousel.Item>
         ))}
       </Carousel>
+      <div className={styles.descriptionBlock}>
+    <p className={styles.description}>
+        ПРОПОНУЄМО ВИГОТОВЛЕННЯ МЕБЛІВ У ПРИХОЖУ. РОЗРОБИМО ПРОЕКТ З ВРАХУВАННЯМ
+        ВАШИХ ПОБАЖАНЬ ТА ДОПОМОЖЕМ ПІДІБРАТИ МАТЕРІАЛИ ТА ФУРНІТУРУ. В НАС ВИ
+        ОТРИМАЄТЕ ЯКІСНІ МЕБЛІ ЗА ОПТИМАЛЬНОЮ ЦІНОЮ, ШВИДКЕ ВИКОНАННЯ ЗАМОВЛЕНЬ
+        ТА ПРОФЕСІЙНИЙ МОНТАЖ.
+      </p>
+      </div>
     </div>
   );
 }
