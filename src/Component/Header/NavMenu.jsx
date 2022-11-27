@@ -11,7 +11,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavigationMenu() {
-  const [showcatalog, setShowcatalog] = useState(false);
+  const [showcatalog, setShowcatalog] = useState("false");
   const [showmebli, setShowmebli] = useState(false);
   const showDropdown = (e) => {
     setShowcatalog(!showcatalog);
@@ -173,7 +173,7 @@ function NavigationMenu() {
               <NavDropdown.Item
                 href="/catalog/rizne"
               >
-                Різне
+                РІЗНЕ
               </NavDropdown.Item>
             </NavDropdown>
 

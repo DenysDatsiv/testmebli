@@ -23,7 +23,7 @@ function ProjectPageSix() {
       <div className={styles.descriptionBlock}>
         <p className={styles.description}>
           В ДАНОМУ ПРОЕКТІ ДЛЯ ВИГОТОВЛЕННЯ КУХНІ НА ФАСАД ВИКОРИСТАНО АКРИЛОВІ
-          ПАНЕЛІ NIEMANN, ПЛИТНІ МАТЕРІАЛИ EGGER,СТІЛЬНИЦЯ ВИГОТОВЛЕНА З
+          ПАНЕЛІ NIEMANN, ПЛИТНІ МАТЕРІАЛИ EGGER, СТІЛЬНИЦЯ ВИГОТОВЛЕНА З
           КОМПАКТ-ПЛИТИ FUNDERMAX, ФУРНІТУРА ВІД ФІРМИ BLUM, LED-ПІДСВІТКА. ТАКОЖ
           ВИГОТОВЛЕНО ПРИХОЖУ, ТУМБУ ПІД TV, МЕБЛІ В СПАЛЬНЮ, ДИТЯЧУ ТА НА
           БАЛКОН.
